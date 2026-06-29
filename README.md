@@ -105,7 +105,7 @@ Future research directions may include the integration of Vision Transformers, a
 
 B.Tech Computer Science Engineering
 
-Artificial Intelligence • Agentic AI • Machine Learning • Large Language Models • Deep Learning • Cyber Security
+Artificial Intelligence • cnn • Machine Learning • Large Language Models • Deep Learning • medical
 
 https://github.com/adithasho
 
