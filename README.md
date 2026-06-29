@@ -96,3 +96,21 @@ Future research directions may include the integration of Vision Transformers, a
 10. [TensorFlow Documentation](https://www.tensorflow.org)
 11. [Keras Documentation](https://keras.io)
 12. [Scikit-Learn Documentation](https://scikit-learn.org/stable)
+
+<div align="center">
+
+## 👨‍💻 Author
+
+### Adith Ashok
+
+B.Tech Computer Science Engineering
+
+Artificial Intelligence • Agentic AI • Machine Learning • Large Language Models • Deep Learning • Cyber Security
+
+https://github.com/adithasho
+
+---
+
+### ⭐ If you found this project interesting, consider starring the repository.
+
+</div>
