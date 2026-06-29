@@ -1,88 +1,98 @@
-🩺 ODIR5K Retinal Disease Classification using Deep Learning
+# 🩺 ODIR5K Retinal Disease Classification using Deep Learning
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0c721dae-ad9e-42b4-a5ea-80294e4968ab" width="100%">
+</p>
 
-<p align="left"> <img src="https://img.shields.io/badge/Python-3.10-blue.svg"> <img src="https://img.shields.io/badge/TensorFlow-2.x-orange.svg"> <img src="https://img.shields.io/badge/Keras-DeepLearning-red.svg"> <img src="https://img.shields.io/badge/Medical-AI-green.svg"> </p>
-<img width="1134" height="496" alt="WhatsApp Image 2026-06-29 at 7 49 54 PM" src="https://github.com/user-attachments/assets/0c721dae-ad9e-42b4-a5ea-80294e4968ab" />
+<p align="left">
+<img src="https://img.shields.io/badge/Python-3.10-blue.svg">
+<img src="https://img.shields.io/badge/TensorFlow-2.x-orange.svg">
+<img src="https://img.shields.io/badge/Keras-DeepLearning-red.svg">
+<img src="https://img.shields.io/badge/Medical-AI-green.svg">
+<img src="https://img.shields.io/badge/Accuracy-84.10%25-brightgreen.svg">
+</p>
 
-ODIR5K Retinal Disease Classification:
+---
 
+# Introduction
 
+Retinal diseases represent one of the leading causes of visual impairment and blindness worldwide. Early diagnosis and timely intervention play a crucial role in preventing irreversible vision loss. However, conventional retinal disease diagnosis requires specialized ophthalmologists and extensive clinical examination, making large-scale screening both time-consuming and resource-intensive. Recent advances in artificial intelligence and deep learning have demonstrated significant potential in automating medical image analysis and assisting clinicians in disease diagnosis. This project presents a deep learning-based framework for automated retinal disease classification using retinal fundus images from the ODIR-5K dataset. The proposed system employs convolutional neural networks to extract discriminative retinal features and classify multiple ocular diseases with high diagnostic performance.
 
-This project presents a deep learning framework for automated retinal disease classification using fundus images from the ODIR-5K dataset. Early diagnosis of retinal diseases is critical because untreated ocular disorders can lead to irreversible vision impairment and blindness. Traditional diagnosis requires highly trained ophthalmologists and considerable clinical effort. Therefore, computer-aided diagnosis systems based on artificial intelligence can provide rapid, accurate, and scalable screening solutions.
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/71af7cf4-5e3d-46d2-aa24-d2921658f805" />
-The proposed model leverages convolutional neural networks for hierarchical feature extraction from retinal fundus images. Extensive preprocessing, augmentation, transfer learning, and performance evaluation techniques were employed to develop a robust classification pipeline capable of identifying multiple retinal diseases from fundus photographs.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/71af7cf4-5e3d-46d2-aa24-d2921658f805" width="85%">
+</p>
 
-Dataset:
+The proposed methodology incorporates image preprocessing, data augmentation, transfer learning, and comprehensive evaluation metrics to develop a robust computer-aided diagnosis system capable of assisting ophthalmologists in retinal disease screening and diagnosis.
 
-The project utilizes the ODIR-5K (Ocular Disease Intelligent Recognition) dataset containing retinal fundus images collected from real clinical environments.
+---
 
-The dataset includes multiple retinal disease categories:
+# Dataset Description
 
-Normal Retina
-Diabetic Retinopathy
-Cataract
-Glaucoma
-Pathological Myopia
-Hypertension
-Age-related Macular Degeneration
-The ODIR dataset is widely used in ophthalmic artificial intelligence research because it contains diverse retinal abnormalities captured under real-world clinical conditions. The significant class imbalance and image variability make retinal disease classification a challenging computer vision problem. Recent research has shown that combining CNN-based local feature extraction with transformer-based global feature modeling can significantly improve retinal disease diagnosis performance.
+The proposed model utilizes the ODIR-5K (Ocular Disease Intelligent Recognition) dataset, which contains retinal fundus images collected from real-world clinical environments. The dataset consists of multiple retinal disease categories, including normal retina, diabetic retinopathy, cataract, glaucoma, pathological myopia, hypertension, and age-related macular degeneration. Due to the presence of class imbalance, varying image quality, and overlapping pathological features, the ODIR-5K dataset represents a challenging benchmark for ophthalmological image classification. The diversity and complexity of retinal abnormalities contained within the dataset provide an ideal environment for evaluating the effectiveness and robustness of deep learning algorithms in medical image analysis.
 
-Confusion Matrix Analysis
+---
 
-The confusion matrix is a visual representation of the classification performance of the proposed retinal disease classification model. The rows represent the actual (true) disease classes, while the columns represent the predicted disease classes. The diagonal values correspond to correctly classified samples, whereas the off-diagonal values indicate misclassifications.
-<img width="932" height="790" alt="image" src="https://github.com/user-attachments/assets/96dcf640-4fe4-4c7d-afc6-67638557938b" />
+# Confusion Matrix Analysis
 
+The confusion matrix provides a comprehensive evaluation of the classification performance achieved by the proposed retinal disease classification framework. The rows correspond to the actual retinal disease categories, while the columns represent the predicted classes generated by the model. The diagonal elements indicate correctly classified samples, whereas the off-diagonal elements represent misclassifications.
 
-Overall Performance
+<p align="center">
+<img src="https://github.com/user-attachments/assets/96dcf640-4fe4-4c7d-afc6-67638557938b" width="75%">
+</p>
 
-The proposed model achieved an overall classification accuracy of approximately 84.10%, demonstrating strong performance across seven retinal disease categories. Most predictions are concentrated along the diagonal of the confusion matrix, indicating that the model successfully learned discriminative features for retinal disease identification.
+The proposed model achieved an overall classification accuracy of approximately 84.10%, demonstrating strong predictive performance across seven retinal disease categories. The majority of predictions are concentrated along the diagonal elements of the confusion matrix, indicating successful feature extraction and disease discrimination capabilities. However, certain retinal diseases, particularly diabetic retinopathy and normal retinal images, exhibit overlapping pathological characteristics that occasionally lead to classification ambiguity. Despite these challenges, the confusion matrix demonstrates that the model successfully learned clinically relevant retinal features and achieved robust generalization performance.
 
-Clinical Interpretation
+From a clinical perspective, the confusion matrix reveals that the proposed deep learning model can effectively distinguish major retinal diseases while maintaining high diagnostic sensitivity. Nevertheless, subtle retinal abnormalities, especially in early-stage diabetic retinopathy and glaucoma, remain challenging due to their visual similarity to healthy retinal structures. Future improvements involving attention mechanisms, Vision Transformers, ensemble learning, and explainable artificial intelligence methods such as Grad-CAM may further improve diagnostic reliability and clinical applicability.
 
-The confusion matrix demonstrates that the proposed deep learning model can effectively distinguish major retinal diseases while maintaining high diagnostic sensitivity. However, diseases with subtle retinal abnormalities, such as diabetic retinopathy and early-stage glaucoma, remain challenging due to their visual similarity to healthy retinal structures. Future improvements may include attention mechanisms, Vision Transformers, ensemble learning, and explainable AI techniques such as Grad-CAM to enhance diagnostic reliability.
+---
 
-Retinal Disease Image Analysis
+# Retinal Disease Image Analysis
 
-The figure above presents representative retinal fundus images belonging to two clinically significant ocular disorders: Diabetic Retinopathy (left) and Glaucoma (right). Retinal fundus imaging is a non-invasive diagnostic technique that provides detailed visualization of the retina, optic disc, blood vessels, and macula, allowing ophthalmologists to identify pathological changes associated with various retinal diseases.
+Retinal fundus imaging is a non-invasive diagnostic technique that provides detailed visualization of retinal structures, including blood vessels, the optic disc, and the macular region. The figure below illustrates representative retinal fundus images corresponding to two clinically significant ocular disorders: diabetic retinopathy and glaucoma.
 
-Diabetic Retinopathy
-<img width="1600" height="500" alt="image" src="https://github.com/user-attachments/assets/54294a41-6f76-46b4-8c13-c22a2080810e" />
+<p align="center">
+<img src="https://github.com/user-attachments/assets/54294a41-6f76-46b4-8c13-c22a2080810e" width="100%">
+</p>
 
-The image on the left illustrates a retinal fundus affected by Diabetic Retinopathy (DR), one of the leading causes of vision impairment worldwide. Diabetic retinopathy occurs due to prolonged hyperglycemia, which damages the retinal microvasculature and causes leakage, hemorrhage, and ischemia. Several characteristic pathological features can be observed in the image, including:
+The retinal image on the left demonstrates characteristic manifestations of diabetic retinopathy, including retinal hemorrhages, hard exudates, vascular abnormalities, and inflammatory lesions caused by prolonged hyperglycemia and retinal microvascular damage. Diabetic retinopathy represents one of the leading causes of blindness worldwide, making early diagnosis essential for preventing irreversible vision loss.
 
-Microaneurysms
-Retinal hemorrhages
-Hard exudates
-Cotton wool spots
-Vascular abnormalities
+The retinal image on the right demonstrates clinical manifestations associated with glaucoma, including optic disc cupping and structural abnormalities of the optic nerve head. Enlargement of the cup-to-disc ratio and neuroretinal rim thinning are considered important clinical indicators of glaucoma progression. Accurate identification of these pathological features is critical for early diagnosis and effective treatment planning.
 
-These lesions appear as bright yellow-white deposits and scattered hemorrhagic regions across the retina. The presence of multiple exudates and vascular changes indicates retinal damage caused by diabetes mellitus. Early detection of diabetic retinopathy is critical because timely treatment can significantly reduce the risk of permanent vision loss.
+---
 
-Training and Validation Performance Analysis
+# Training and Validation Performance Analysis
 
-The performance of the proposed retinal disease classification model was evaluated over 20 training epochs using training and validation accuracy and loss metrics. These learning curves provide valuable insights into the convergence behavior, generalization capability, and overall effectiveness of the deep learning model.
+The performance of the proposed retinal disease classification model was evaluated over twenty training epochs using training and validation accuracy and loss metrics. These learning curves provide valuable insights into the optimization process, convergence behavior, and generalization capability of the deep learning framework.
 
-Model Accuracy Analysis
+<p align="center">
+<img src="https://github.com/user-attachments/assets/49c52186-bf47-4dd1-8283-34fe3db99f3a" width="90%">
+</p>
 
-The accuracy curve demonstrates the evolution of classification performance throughout the training process. The training accuracy increased steadily from approximately 72.5% during the initial epoch to 80.8% by the final epoch, indicating that the model successfully learned discriminative retinal features from the training dataset.
-<img width="1390" height="490" alt="image" src="https://github.com/user-attachments/assets/49c52186-bf47-4dd1-8283-34fe3db99f3a" />
+The training accuracy increased steadily from approximately 72.5% during the initial epoch to approximately 80.8% during the final epoch, indicating effective feature learning and optimization. Similarly, the validation accuracy rapidly converged and stabilized around 84%, achieving a peak validation accuracy of approximately 84.1%. The relatively small gap between training and validation accuracy suggests that the proposed model exhibits strong generalization capability without experiencing severe overfitting.
 
+Furthermore, the training loss decreased from approximately 0.95 to 0.57, while the validation loss decreased from approximately 0.59 to 0.48. The smooth and consistent reduction in loss values demonstrates stable optimization behavior and effective learning of discriminative retinal representations. The observation that validation loss remained lower than training loss throughout the training process further supports the effectiveness of regularization techniques such as data augmentation, transfer learning, and dropout.
 
-Similarly, the validation accuracy rapidly improved during the early training stages and stabilized around 83–84%, achieving a peak validation accuracy of approximately 84.1%. The relatively small difference between training and validation accuracy suggests that the model exhibits strong generalization performance and does not suffer from significant overfitting.
+---
 
-The validation accuracy consistently remained higher than the training accuracy throughout the training process. This behavior is commonly observed when regularization techniques such as data augmentation, dropout, batch normalization, and transfer learning are employed, as these methods improve the model's ability to generalize to unseen retinal images.
+# Conclusion
 
-Key observations from the accuracy curve include:
-Steady increase in training accuracy throughout training.
-Rapid convergence of validation accuracy.
-Stable performance after approximately 10 epochs.
-Minimal gap between training and validation accuracy.
-Absence of severe overfitting.
+The proposed retinal disease classification framework demonstrates the effectiveness of deep learning techniques for automated ophthalmological diagnosis. By leveraging convolutional neural networks, transfer learning, and comprehensive performance evaluation strategies, the model achieved an overall classification accuracy of 84.10% while maintaining strong generalization performance. The obtained results highlight the potential of artificial intelligence-based diagnostic systems to assist ophthalmologists in clinical decision-making, reduce diagnostic workload, and facilitate large-scale retinal disease screening programs.
 
-Model Loss Analysis
+Future research directions may include the integration of Vision Transformers, attention mechanisms, ensemble learning strategies, and explainable artificial intelligence techniques to further improve diagnostic accuracy and clinical interpretability.
 
-The loss curves illustrate the optimization behavior of the neural network during training. The training loss decreased significantly from approximately 0.95 during the first epoch to around 0.57 at the final epoch, demonstrating effective parameter optimization and feature learning.
+---
 
-Similarly, the validation loss decreased from approximately 0.59 to 0.48, indicating that the model maintained strong predictive performance on previously unseen retinal images. The smooth decline in both training and validation loss confirms the stability of the optimization process and the effectiveness of the chosen learning strategy.
+# References
 
-The validation loss remained consistently lower than the training loss throughout the training process, further supporting the conclusion that the model generalizes well and benefits from regularization techniques.
+1. [ODIR-2019 Grand Challenge Dataset](https://odir2019.grand-challenge.org/)
+2. [An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+3. [Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357)
+4. [Coordinate Attention for Efficient Mobile Network Design](https://arxiv.org/abs/2103.02907)
+5. [Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization](https://arxiv.org/abs/1610.02391)
+6. [CNN-Trans Model: A Parallel Dual-Branch Network for Fundus Image Classification](https://doi.org/10.1016/j.bspc.2024.106621)
+7. [Application of Deep Learning in Fundus Image Processing for Ophthalmic Diagnosis](https://arxiv.org/abs/1812.07101)
+8. [CNNs for Automatic Glaucoma Assessment Using Fundus Images](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/s12938-019-0649-y)
+9. [CataractNet: An Automated Cataract Detection System](https://ieeexplore.ieee.org/document/9547424)
+10. [TensorFlow Documentation](https://www.tensorflow.org)
+11. [Keras Documentation](https://keras.io)
+12. [Scikit-Learn Documentation](https://scikit-learn.org/stable)
